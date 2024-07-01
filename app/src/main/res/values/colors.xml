@@ -6,4 +6,5 @@
     <color name="orange">#FF5722</color>
     <color name="button_white">#FFFFFFFF</color>
     <color name="toolbar_color">#F8F9FF</color>
+    <color name="gray">#BFBFBF</color>
 </resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <TextView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="@dimen/_36dp"
+        android:id="@+id/alertTitle"
+        android:fontFamily="@font/opensans"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_18sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:text="Are you sure you want to delete?"
+        />
+
+    <LinearLayout
+        android:id="@+id/btn_linear"
+        android:layout_margin="@dimen/_18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/alertTitle">
+
+        <Button
+            android:id="@+id/delete_btn"
+            android:layout_weight="1"
+            android:layout_marginEnd="@dimen/_18dp"
+            android:layout_marginStart="@dimen/_18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/red"
+            android:paddingTop="@dimen/_13dp"
+            android:fontFamily="@font/opensans"
+            android:paddingBottom="@dimen/_13dp"
+            android:text="Delete"
+            android:textColor="@color/button_white"
+            android:textStyle="bold"
+            app:cornerRadius="@dimen/_18dp"
+            style="?android:attr/buttonBarButtonStyle" />
+        <Button
+            android:id="@+id/cancel_btn"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/gray"
+            android:paddingTop="@dimen/_13dp"
+            android:fontFamily="@font/opensans"
+            android:paddingBottom="@dimen/_13dp"
+            android:layout_marginEnd="@dimen/_18dp"
+            android:layout_marginStart="@dimen/_18dp"
+            android:text="Cancel"
+            android:textColor="@color/button_white"
+            android:textStyle="bold"
+            app:cornerRadius="@dimen/_18dp"
+            style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

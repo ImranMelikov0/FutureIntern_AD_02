@@ -6,4 +6,7 @@
     </style>
 
     <style name="Theme.FutureIntern_AD_02" parent="Base.Theme.FutureIntern_AD_02" />
+    <style name="RoundedAlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@drawable/white_left_right_top_bottom_radius</item>
+    </style>
 </resources>
